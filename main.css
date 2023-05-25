@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     border: 0;
+    overflow-x: hidden;
 }
 body {
     background-color: black;
@@ -23,4 +24,18 @@ p {
     padding-top: 20px;
     font-size: 20px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.Image {
+    position: absolute;
+    left:50%;
+    top: 65%;
+    border: rgb(255, 102, 0) solid 3px;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    transition: 0.1s;
+}
+.Image:hover {
+    filter: blur(5px) grayscale(50%);
+    transition: 0.2s;
+    border: rgb(255, 102, 0) solid 7px;
 }

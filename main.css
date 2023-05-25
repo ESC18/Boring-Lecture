@@ -17,11 +17,19 @@ body {
     font-size: 50px;
     color: aliceblue;
 }
-p {
+p.MainP{
     color: aliceblue;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 20px;
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+p.SecondP{
+    color: aliceblue;
+    padding-left: 30px;
+    padding-right: 70%;
+    padding-top: 55px;
     font-size: 20px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }

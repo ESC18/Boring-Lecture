@@ -4,6 +4,8 @@
     border: 0;
     overflow-x: hidden;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+
 }
 body {
     background-color: black;
@@ -41,6 +43,15 @@ p.SecondP{
     font-size: 20px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+.Loading {
+    font-size: 20px;
+    position: absolute;
+    color: rgb(255, 102, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%,-50%);
+}
 .Image {
     position: absolute;
     left:50%;
@@ -56,7 +67,6 @@ p.SecondP{
     border: rgb(255, 102, 0) solid 7px;
 }
 .Refresh {
-    display: inline-block;
     position: absolute;
     font-size: 25px;
     color: aliceblue;
@@ -70,7 +80,6 @@ p.SecondP{
     opacity: 0%;
     transition: all 0.5s;
     cursor:pointer;
-
 }
 .Image:hover + .Refresh {
     opacity: 100%;
@@ -79,10 +88,30 @@ p.SecondP{
 .Refresh:hover {
     opacity: 100%;
     transition: all 0.2s;
-    background-color: rgba(0, 0, 0, 0.507);
+    background-color: rgb(255, 255, 255);
     border: rgb(255, 255, 255) solid 200px;
-    border-top: rgb(255, 255, 255) solid 221px;
-    border-bottom: rgb(255, 255, 255) solid 221px;
+    border-top: rgb(255, 255, 255) solid 215px;
+    border-bottom: rgb(255, 255, 255) solid 215px;
+    color: rgb(255, 102, 0);
+    font-size: 30px;
+}
+.Refresh:hover::after {
+    content: "?";
+}
+.Refresh:active:after {
+    content: "*click*";
+    font-size: 7px;
+    color: black;
+}
+a:link {
     color: rgb(255, 102, 0);
 }
-
+a:visited {
+    color: rgb(255, 102, 0);
+}
+a:hover {
+    color: rgb(255, 102, 0);
+}
+a:active {
+    color: rgb(255, 102, 0);
+}

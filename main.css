@@ -7,6 +7,13 @@
 body {
     background-color: black;
 }
+body::-webkit-scrollbar {
+    background-color: rgb(68, 68, 68);
+    scrollbar-color: rgb(255, 102, 0);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 102, 0);
+}
 .Title {
     position: relative;
     width: 100%;
@@ -46,4 +53,35 @@ p.SecondP{
     filter: blur(5px) grayscale(50%);
     transition: 0.2s;
     border: rgb(255, 102, 0) solid 7px;
+}
+.Refresh {
+    position: absolute;
+    font-size: 25px;
+    text-align: center;
+    color: aliceblue;
+    left:50%;
+    top: 65%;
+    transform: translate(-50%,-50%);
+    width: 100px;
+    border: rgb(255, 102, 0) solid 3px;
+    border-radius: 10px;
+    opacity: 0%;
+    transition: all 0.1s;
+    cursor:pointer;
+}
+.Image:hover + .Refresh {
+    opacity: 100%;
+    transition: all 0.2s;
+}
+.Refresh:hover {
+    opacity: 100%;
+    transition: all 0.2s;
+    background-color: rgba(102, 102, 102, 0.603);
+    border: rgb(255, 255, 255) solid 3px;
+
+}
+.Refresh:hover + .Image{
+    filter: blur(5px) grayscale(50%);
+    transition: 0.2s;
+    border: rgb(255, 255, 255) solid 7px;
 }
